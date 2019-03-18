@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+	<style >
+	/*	.SearchBox{
+			width: 100%;
+			height: 50px;
+			background:rgba(254,12,63,0.9);
+			z-index: 100;
+			position: fixed;
+			top: -1000px;
+		}
+		.Search{
+			width: 1230px;
+			height:50px;
+			margin:0 auto;
+		}
+		.Search input:nth-child(1){
+			width: 648px;
+			height: 28px;
+			border: 1px solid rgba(254,12,63,0.9);
+			border-right: none;
+			float: left;
+		}
+		.Search input:nth-child(2){
+			width: 90px;
+			height: 32px;
+			border: 1px solid #fe0c3f;
+			border-left: none;
+			background-color: #fe0c3f;
+			font-size: 16px;
+			color: #ffffff;
+		}*/
+
+
+	</style>
+</head>
+<body>
+
+<!-- 
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div> -->
+
+
+
+	<!-- <div class="SearchBox">
+		<div class="Search">
+			<img style="opacity: 0.9;" src="img/SearchBox/SearchBox.jpg" alt="">
+			<form style="float: right; margin-top: 11px;margin-right: 245px;" action="">
+				<input type="text" placeholder="搜索 天猫 商品/品牌 店铺" />
+				<input type="button" value="搜索"/>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var th=$(window).scrollTop();
+			if (th>300) {
+				 $(".SearchBox").css({
+				 		"top": "0px"
+				 	});
+			}else{
+				$(".SearchBox").css({
+				 		"top": "-1000px"
+				 	});
+			}
+		})
+	</script> -->
+
+	<!-- <div class="floatNav">
+		<div class="floatNavT">
+			导航
+		</div>
+		<div class="floatNavB">
+			<a href=""><span>天猫超市</span></a>
+			<a href=""><span>天猫国际</span></a>
+			<a href=""><span>美丽人生</span></a>
+			<a href=""><span>潮电酷玩</span></a>
+			<a href=""><span>居家生活</span></a>
+			<a href=""><span>打造爱巢</span></a>
+			<a href=""><span>户外出行</span></a>
+			<a href=""><span>猜你喜欢</span></a>
+			<a href=""><span><i class="iconfont icon-jiantou"></i>顶部</a></span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			let th=$(window).scrollTop();
+			if (th>=200) {
+				 // $(".floatNav").css({
+				 // 		"bottom": "50px"
+				 // 	});
+				  $(".floatNav").animate({ 
+				    "width": "36px",
+				    "height": "369px", 
+				   "left": "2px" 
+				  }, 200);
+
+			}
+			if (th<200){
+				$(".floatNav").animate({ 
+				   "width": "0px",
+				   "height": "0px",
+				   "left": "-50px" 
+				  }, 200 );
+			}
+		})
+	</script>
+ -->
+	<!-- <style>
+		/*.floatNav{
+			width:0px; 
+			height:0px;
+			background-color: #f5f5f5;
+			font-size: 12px;
+			z-index: 123;
+			position: fixed;
+			left:-50px; 
+			bottom:50px;
+		}
+		.floatNavT{
+			width: 36px;
+			height: 36px;
+			background-color: #ff0036;
+			font-size: 12px;
+			color: #ffffff;
+			cursor: pointer;
+			text-align: center;
+			line-height: 36px;
+		}
+		.floatNavB{
+			width: 36px;
+			height: 336px;
+		}
+		.floatNavB a{
+			display: block;
+			width: 36px;
+			height: 30px;
+			margin-top: 1px;
+			background-color: #626262;
+			font-size: 12px;
+			text-align: center;
+			color: #ffffff;
+			padding-top: 6px;
+			
+		}
+		.floatNavB span{
+			display: block;
+			line-height: 12px;
+		    width: 24px;
+		    height: 28px;
+		    margin: 0px auto
+
+		}
+
+		.floatNavB a:last-child{
+			background-color: #ababab;
+
+
+		}
+		.floatNavB a:nth-child(1):hover{
+			background-color: #64c333;
+		}
+		.floatNavB a:nth-child(2):hover{
+			background-color: #000000;
+		}
+		.floatNavB a:nth-child(3):hover{
+			background-color: #ea5f8d;
+		}
+		.floatNavB a:nth-child(4):hover{
+			background-color: #0aa6e8;
+		}
+		.floatNavB a:nth-child(5):hover{
+			background-color: #64c333;
+		}
+		.floatNavB a:nth-child(6):hover{
+			background-color: #f15453;
+		}
+		.floatNavB a:nth-child(7):hover{
+			background-color: #19c8a9;
+		}
+		.floatNavB a:nth-child(8):hover{
+			background-color: #000000;
+		}*/
+				
+	</style>
+		 -->
+
+
+	<div class="sidebar">
+		<span><a href=""><i class="iconfont icon-tianmaoxingxiang1"></i></a></span>
+		<span><a href=""><i class="iconfont icon-gouwuche"></i>购物车</a></span>
+		<span><a href=""><i class="iconfont icon-qian"></i></a></span>
+		<span><a href=""><i class="iconfont icon-shoucang"></i></a></span>
+		<span><a href=""><i class="iconfont icon-lishijilu"></i></a></span>
+		<span><a href=""><i class="iconfont icon-chongzhi0101"></i></a></span>
+		<span><a href=""><i class="iconfont icon-3fankuiyijianbai"></i></a></span>
+		<span><a href=""><i class="iconfont icon-erweima"></i></a></span>
+		<span><a href=""><i class="iconfont icon-fanhuidingbu1"></i></a></span>
+	</div>
+<style>
+	.sidebar{
+		width: 35px;
+		height: 625px;
+		/*height: 100%;*/
+		background-color: #000000;
+		
+		font-size: 20px;
+		padding-top: 130px;
+		z-index: 14;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+	}
+	.sidebar span{
+		display: block;
+		width: 35px;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 5px;
+		color: #ffffff;
+	}
+	.sidebar span a{
+		color: #ffffff;
+	}
+	.sidebar i{
+		font-size: 20px;
+	}
+	.sidebar span:nth-child(7) i{
+		font-size: 16px;
+	}
+	.sidebar span:nth-child(8) i{
+		font-size: 18px;
+	}
+	.sidebar span:nth-child(1){
+		height: 35px;
+		
+	}
+	.sidebar span:nth-child(2){
+		font-size: 14px;
+		width: 35px;
+		height: 100px;
+		margin-top: 6px;
+		padding-top: 0px;
+
+	}
+	.sidebar span:nth-child(2) a{
+		padding-top: 5px;
+		font-size: 14px;
+		width: 25px;
+		height: 9px;
+		display: block;
+		margin: 0 auto ;
+		border-top: 1px solid #444444;
+		border-bottom: 1px solid #444444;
+	}
+	.sidebar span:nth-child(2) i{
+		color: #ff0036;
+	}
+	.sidebar span:nth-child(3){
+		height: 30px;
+		/*background-color: pink;*/
+		margin-top: 6px;
+	}
+	.sidebar span:nth-child(4){
+		height: 35px;
+		margin-top: 6px;
+	}
+	.sidebar span:nth-child(5){
+		height: 35px;
+		margin-top: 5px;
+	}
+	.sidebar span:nth-child(6){
+		height: 35px;
+		margin-top: 4px;
+	}
+	.sidebar span:nth-child(7){
+		height: 35px;
+		margin-top: 74px;
+	}
+	.sidebar span:nth-child(8){
+		height: 35px;
+		margin-top: 1px;
+	}
+	.sidebar span:nth-child(9){
+		height: 35px;
+		margin-top: 1px;
+	}
+	
+	.sidebar span:nth-child(1):hover,.sidebar span:nth-child(1)~span:hover{
+		background-color: #ff0036;
+	}
+</style>
+</body>
+</html>
