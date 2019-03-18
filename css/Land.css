@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑";
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+
+}
+img{
+	border:none;
+}
+
+.headerBox{
+	width: 100%;
+	height: 88px;
+	background-color: 
+}
+.header{
+	width: 1190px;
+	height: 88px;
+	margin:0 auto;
+	line-height: 88px;
+}
+.header a{
+	width: 190px;
+	height:27px;
+
+}
+.header img{
+	width: 190px;
+	height:27px;
+	margin-top: 30px;
+}
+.bodyBox{
+	width: 100%;
+	height: 600px;
+	background-color:#dd2726; 
+}
+.body{
+	width: 1190px;
+	height: 600px;
+	margin:0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.body img{
+	width: 1190px;
+	height:600px;
+	
+}
+.bodyBox a{
+	display: block;
+	width: 630px;
+	height:440px;
+	z-index: 10;
+	position: relative;
+	top:-520px; 
+	left:155px;
+}
+.bodyRight{
+
+	width: 350px;
+	height:394px;
+	z-index: 20;
+	position: relative;
+	top:-909px; 
+	left:860px;
+	padding-top: 10px;
+	background-color: #ffffff;
+}
+.safeLand{
+	width: 143px;
+	height:28px;
+	line-height: 28px;
+	z-index: 23;
+	border: 1px solid #df9c1f;
+	margin-left: 149px;
+}
+.safeLand i{
+	color: #df9c1f;
+	font-size: 14px;
+	margin-left: 16px;
+}
+.safeLand span{
+	color: #df9c1f;
+	font-size: 12px;
+}
+.ewLand{
+	display: inline-block;
+	z-index: 22;
+	width: 52px;
+	height:52px;
+	font-size: 52px;
+	line-height: 52px;
+	color: #ff0036;
+	float: right;
+
+	position: relative;
+	right:5px;
+	top:0px; 
+
+}
+.landForm{
+	width: 216px;
+	height:300px;
+
+}
+.landForm span{
+	width: 150px;
+	height:22px;
+	margin-left: 26px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #3c3c3c;
+}
+.MemberName{
+	width: 300px;
+	height: 42px;
+}
+.MemberName label{
+	width: 40px;
+	height: 42px;
+	font-size: 22px;
+	color: #606060;
+	line-height: 40px;
+	background-color: #dddddd;
+	border: 1px solid #cbcbcb;
+	border-left: none;
+	float: left;
+}
+.MemberName input{
+	width:256px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	border: 1px solid #cbcbcb;
+	border-right: none;
+	
+}
+.MemberPassword{
+	width: 300px;
+	height: 42px;
+}
+.MemberPassword label{
+	width: 40px;
+	height: 42px;
+	font-size: 22px;
+	color: #606060;
+	line-height: 40px;
+	background-color: #dddddd;
+	border: 1px solid #cbcbcb;
+	border-left: none;
+	float: left;
+}
+.MemberPassword input{
+	width:256px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	border: 1px solid #cbcbcb;
+	border-right: none;
+	
+}
+.landForm form input:last-child{
+	width: 300px;
+	height: 42px;
+	font-size:16px; 
+	color:#ffffff;
+	background-color: #ff0036;
+}
