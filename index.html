@@ -5,9 +5,33 @@
 	<title>天猫tmall.com--理想生活上天猫</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
-
+	<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
 </head>
 <body>
+	<div class="SearchBox">
+		<div class="Search">
+			<img style="opacity: 0.9;" src="img/SearchBox/SearchBox.jpg" alt="">
+			<form style="float: right; margin-top: 11px;margin-right: 245px;" action="">
+				<input type="text" placeholder="搜索 天猫 商品/品牌 店铺" />
+				<input type="button" value="搜索"/>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var th=$(window).scrollTop();
+			if (th>787) {
+				 $(".SearchBox").css({
+				 		"top": "0px"
+				 	});
+			}else{
+				$(".SearchBox").css({
+				 		"top": "-1000px"
+				 	});
+			}
+		})
+	</script>
+	<div id="maodingbu" style="position: relative;"></div>
 	<div class="header">
 		<div class="headerIndex">
 			<div class="headerLeft">
@@ -33,7 +57,9 @@
 	</div>
 	<div class="logoBox">
 		<div class="logo">
-			<img src="img/img_logo/logo.png" alt="">
+			<!-- <img src="img/img_logo/logo.png"> -->
+
+			<img class="doodle hide j_doodle" src="https://img.alicdn.com/tps/i4/TB164GRLFzqK1RjSZFCtKbbxVXa.gif" data-src="https://img.alicdn.com/tps/i4/TB164GRLFzqK1RjSZFCtKbbxVXa.gif">
 			<div class="logoSearch">
 				<form action="">
 					<input type="text"/>
@@ -166,6 +192,7 @@
 		</div>
 	</div>
 	<div class="shoppingBox">
+		<div id="maoShopping" style="position: relative;top: -35px;"></div>
 		<div class="shopping">
 			<div class="shopping_nav">
 				<img src="img/shopping/catShopping.png" alt=""/>
@@ -190,7 +217,7 @@
 							<span>天猫<br/>超市</span>
 						</div>
 						<div class="shopping_contentLT_right">
-							<span>粮油囤货日</span>
+							<span>粮油囤货日</span><br/>
 							<span>领卷减十元</span>
 						</div>
 					</div>	
@@ -295,5 +322,1032 @@
 			</div>
 		</div>
 	</div>
+	<div class="tmallHK_Box">
+		<div id="maotmallHK" style="position: relative;top: -35px;"></div>
+		<div class="tmallHK">
+			<div class="tmallHK_nav">
+				<img src="img\tmallHK\catInternational.png" alt=""/>
+				<span>
+					<a href="">口红</a>
+					<a href="">YSL</a>
+					<a href="">面膜</a>
+					<a href="">防晒</a>
+					<a href="">迪奥</a>
+				</span>
+			</div>
+			<div class="tmallHK_content">
+				<div class="tmallHK_contentL">			
+					<div class="tmallHK_contentLT">
+						<a href=""><img src="img/tmallHK/a1.png" alt=""></a>
+						<img src="img/shopping/shopping_gengduo.png" alt="">
+						<div class="tmallHK_contentLTS">
+							<div class="tmallHK_contentLT_left">
+								<span>天猫<br/>超市</span>
+							</div>
+							<div class="tmallHK_contentLT_right">
+								<span>粮油囤货日</span><br/>
+								<span>领卷减十元</span>
+							</div>
+						</div>
+					</div>
+					<div class="tmallHK_contentLB">
+						<a href=""><img src="img/tmallHK/b1.png" alt=""></a>
+						<img src="img/shopping/shopping_gengduo.png" alt="">
+						<div class="tmallHK_contentLBS">
+							<div class="tmallHK_contentLB_left">
+								<span>天猫<br/>超市</span>
+							</div>
+							<div class="tmallHK_contentLB_right">
+								<span>粮油囤货日</span><br/>
+								<span>领卷减十元</span>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="tmallHK_contentR">
+					<div class="tmallHK_contentT">
+						<div class="tmallHK_contentTtwo">
+						<a href="">
+							<img src="img/tmallHK/a2.jpg" alt="">
+							<div class="tmallHK_contentTtwoM">
+								官方直营优选
+							</div>
+							<div class="tmallHK_contentTtwoB">
+								极致购物感受
+							</div>
+						</a>
+						</div>
+						<div class="tmallHK_contentTthree">
+							<a href="">
+								<img src="img/tmallHK/a5.jpg" alt="">
+								<div class="tmallHK_contentTthreeM">
+									Philips/飞利浦HS198 男士剃须刀充电式电动刮胡刀
+								</div>
+								<div class="tmallHK_contentTthreeB">
+									￥255
+								</div>
+							</a>
+						</div>
+						<div class="tmallHK_contentTfour">
+							<a href="">
+								<img src="img/tmallHK/a3.jpg" alt="">
+								<div class="tmallHK_contentTfourM">
+									【直营】韩国NatureRepublic进口自然乐园芦荟胶补水面霜修补受损
+								</div>
+								<div class="tmallHK_contentTfourB">
+									￥45
+								</div>
+							</a>
+						</div>
+						<div class="tmallHK_contentTfive">
+							<a href="">
+								<img src="img/tmallHK/a4.jpg" alt="">
+								<div class="tmallHK_contentTfiveM">
+									【直营】日本尤妮佳进口wave威拂手持清洁除尘掸替换装 平头8片
+								</div>
+								<div class="tmallHK_contentTfiveB">
+									￥89
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="tmallHK_contentB">
+						<div class="tmallHK_contentBtwo">
+						<a href="">
+							<img src="img/tmallHK/b2.jpg" alt="">
+							<div class="tmallHK_contentBtwoM">
+								保税区 日本花印保湿补水氨基酸洗面奶 150g
+							</div>
+							<div class="tmallHK_contentBtwoB">
+								￥55
+							</div>
+						</a>
+						</div>
+						<div class="tmallHK_contentBthree">
+							<a href="">
+								<img src="img/tmallHK/b3.jpg" alt="">
+								<div class="tmallHK_contentBthreeM">
+									露华浓不脱色妍薄粉饼控油遮瑕持久定妆清透自然女裸妆清爽美肤男
+								</div>
+								<div class="tmallHK_contentBthreeB">
+									￥69
+								</div>
+							</a>
+						</div>
+						<div class="tmallHK_contentBfour">
+							<a href="">
+								<img src="img/tmallHK/b4.jpg" alt="">
+								<div class="tmallHK_contentBfourM">
+									保税 日本花王Curel珂润润浸保湿滋养深层人气进口乳霜 身体乳90g
+								</div>
+								<div class="tmallHK_contentBfourB">
+									￥98
+								</div>
+							</a>
+						</div>
+						<div class="tmallHK_contentBfive">
+							<a href="">
+								<img src="img/tmallHK/b5.jpg" alt="">
+								<div class="tmallHK_contentBfiveM">
+									AVANCE/亚邦丝丰盈自然液体双头染眉笔防水防汗不脱色持久自然
+								</div>
+								<div class="tmallHK_contentBfiveB">
+									￥129
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ClothesShopBox">
+		<div class="ClothesShop">
+			<img src="img\tmallHK\TmallClothes.jpg" alt="">
+		</div>
+	</div>
+	<div class="BeautifulLifeBox">
+		<div id="maoBeautifulLife" style="position: relative;top: -35px;"></div>
+		<div class="BeautifulLife">
+			<div class="BeautifulLife_nav">
+				<span>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+					美丽人生
+				</span>
+					 FASHION & BEAUTY
+				
+				<span>
+					<a href="">连衣裙</a>
+					<a href="">T恤男</a>
+					<a href="">美容护肤</a>
+					<a href="">休闲男鞋</a>
+					<a href="">黄金项链</a>
+					<a href="">单鞋</a>
+					<a href="">女包</a>
+					<a href="">文胸</a>
+					<a href="">大牌腕表</a>
+				</span>
+			</div>
+			<div class="BeautifulLife_content">
+				<div class="BeautifulLife_contentL">
+					<a href=""><img src="img/BeautifulLife/boy.jpg" alt=""></a>
+					<img src="img/shopping/shopping_gengduo.png" alt="">
+
+					<div class="BeautifulLife_contentLT">
+						<div class="BeautifulLife_contentLT_left">
+							<span>天猫<br/>超市</span>
+						</div>
+						<div class="BeautifulLife_contentLT_right">
+							<span>粮油囤货日</span><br/>
+							<span>领卷减十元</span>
+						</div>
+					</div>	
+				</div>
+
+
+					<div class="BeautifulLife_contentR">
+					<div class="BeautifulLife_contentT">
+						<div class="BeautifulLife_contentTtwo">
+						<a href="">
+							<img src="img/BeautifulLife/jiaoxie.jpg" alt="">
+							<div class="BeautifulLife_contentTtwoM">
+								双星中筒雨鞋加绒雨鞋一体加棉半筒水鞋秋冬保暖防滑耐磨劳保雨靴
+							</div>
+							<div class="BeautifulLife_contentTtwoB">
+								￥39
+							</div>
+						</a>
+						</div>
+						<div class="BeautifulLife_contentTthree">
+							<a href="">
+								<img src="img/BeautifulLife/361du.jpg" alt="">
+								<div class="BeautifulLife_contentTthreeM">
+									361°361度正品2017年夏季新款男子足球专业鞋 571725507
+								</div>
+								<div class="BeautifulLife_contentTthreeB">
+									￥109
+								</div>
+							</a>
+						</div>
+						<div class="BeautifulLife_contentTfour">
+							<a href="">
+								<img src="img/BeautifulLife/qianbao.jpg" alt="">
+								<div class="BeautifulLife_contentTfourM">
+									卡帝乐鳄鱼正品钱包男短款鳄鱼纹真皮横款钱夹头层牛皮青年皮夹子
+								</div>
+								<div class="BeautifulLife_contentTfourB">
+									￥109
+								</div>
+							</a>
+						</div>
+						<div class="BeautifulLife_contentTfive">
+							<a href="">
+								<img src="img/BeautifulLife/tshirt.jpg" alt="">
+								<div class="BeautifulLife_contentTfiveM">
+									与狼共舞短袖T恤 夏季新款圆领亮片字母印花韩版潮流黑色衣服男装
+								</div>
+								<div class="BeautifulLife_contentTfiveB">
+									￥169
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="BeautifulLife_contentB">
+						<div class="BeautifulLife_contentBtwo">
+						<a href="">
+							<img src="img/BeautifulLife/fushui.jpg" alt="">
+							<div class="BeautifulLife_contentBtwoM">
+								美加净蜂蜜倍润滋养柔肤水150ml*2保湿爽肤水润肤护肤滋润
+							</div>
+							<div class="BeautifulLife_contentBtwoB">
+								￥45
+							</div>
+						</a>
+						</div>
+						<div class="BeautifulLife_contentBthree">
+							<a href="">
+								<img src="img/BeautifulLife/baozhu.jpg" alt="">
+								<div class="BeautifulLife_contentBthreeM">
+									太阳能展示台转盘展示架旋转台首饰珠宝手机手表玉器手链眼镜展架
+								</div>
+								<div class="BeautifulLife_contentBthreeB">
+									￥27
+								</div>
+							</a>
+						</div>
+						<div class="BeautifulLife_contentBfour">
+							<a href="">
+									<img src="img/BeautifulLife/nvxie.jpg" alt="">
+									<div class="BeautifulLife_contentBfourM">
+										短筒尖头中跟方跟套筒优雅时尚舒适女短靴简约瘦瘦靴1116505350
+									</div>
+									<div class="BeautifulLife_contentBfourB">
+										￥35
+									</div>
+								</a>
+							</div>
+							<div class="BeautifulLife_contentBfive">
+								<a href="">
+									<img src="img/BeautifulLife/pixie.jpg" alt="">
+									<div class="BeautifulLife_contentBfiveM">
+										Daphne/达芙妮旗下shoebox鞋柜秋新系带商务休闲男鞋百搭透气板鞋
+									</div>
+									<div class="BeautifulLife_contentBfiveB">
+										￥39
+									</div>
+								</a>
+							</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="VideoGameBox">
+		<div id="maoVideoGame" style="position: relative;top: -35px;"></div>
+		<div class="VideoGame">
+			<div class="VideoGame_nav">
+				<span>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+					潮电酷玩
+				</span>
+					 ELECTRONICS
+				
+				<span>
+					<a href="">手机</a>
+					<a href="">iPhone</a>
+					<a href="">相机</a>
+					<a href="">数码配件</a>
+					<a href="">影音电玩</a>
+					<a href="">生活电器</a>
+					<a href="">个人护理</a>
+					<a href="">电脑硬件</a>
+					<a href="">笔记本</a>
+				</span>
+			</div>
+			<div class="VideoGame_content">
+				<div class="VideoGame_contentL">
+					<a href=""><img src="img/VideoGame/girl.jpg" alt=""></a>
+					<img src="img/shopping/shopping_gengduo.png" alt="">
+
+					<div class="VideoGame_contentLT">
+						<div class="VideoGame_contentLT_left">
+							<span>天猫<br/>超市</span>
+						</div>
+						<div class="VideoGame_contentLT_right">
+							<span>粮油囤货日</span><br/>
+							<span>领卷减十元</span>
+						</div>
+					</div>	
+				</div>
+
+
+				<div class="VideoGame_contentR">
+					<div class="VideoGame_contentT">
+						<div class="VideoGame_contentTtwo">
+						<a href="">
+							<img src="img/VideoGame/shubiao.jpg" alt="">
+							<div class="VideoGame_contentTtwoM">
+								HP/惠普 Elite充电蓝牙鼠标商务行政多功能便携PPT演示器2CE30AA
+							</div>
+							<div class="VideoGame_contentTtwoB">
+								￥399
+							</div>
+						</a>
+						</div>
+						<div class="VideoGame_contentTthree">
+							<a href="">
+								<img src="img/VideoGame/neicunka.jpg" alt="">
+								<div class="VideoGame_contentTthreeM">
+									朗科128g内存卡手机tf卡行车记录仪摄像头4k高清高速sd存储卡128G
+								</div>
+								<div class="VideoGame_contentTthreeB">
+									￥99.9
+								</div>
+							</a>
+						</div>
+						<div class="VideoGame_contentTfour">
+							<a href="">
+								<img src="img/VideoGame/watch.jpg" alt="">
+								<div class="VideoGame_contentTfourM">
+									纽曼EX16蓝牙智能电子手表手环男士户外运动防水秒表计步遥控拍照
+								</div>
+								<div class="VideoGame_contentTfourB">
+									￥149
+								</div>
+							</a>
+						</div>
+						<div class="VideoGame_contentTfive">
+							<a href="">
+								<img src="img/VideoGame/tiesanjiao.jpg" alt="">
+								<div class="VideoGame_contentTfiveM">
+									APTX铁三角a2dc线AKG索尼达音科威士顿N1/N3/300AP蓝牙耳机升级线0.75/0.78mmcx通用IE80S舒尔SE215/535带麦
+								</div>
+								<div class="VideoGame_contentTfiveB">
+									￥189
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="VideoGame_contentB">
+						<div class="VideoGame_contentBtwo">
+						<a href="">
+							<img src="img/VideoGame/kongtiao.jpg" alt="">
+							<div class="VideoGame_contentBtwoM">
+								先锋取暖器DQ1331壁挂式暖风机家用电暖器居浴室暖风机室内加热器
+							</div>
+							<div class="VideoGame_contentBtwoB">
+								￥249
+							</div>
+						</a>
+						</div>
+						<div class="VideoGame_contentBthree">
+							<a href="">
+								<img src="img/VideoGame/yinxingjia.jpg" alt="">
+								<div class="VideoGame_contentBthreeM">
+									专业卡包音响支架 金属可升降KTV音箱落地支架舞台箱专用三角架
+								</div>
+								<div class="VideoGame_contentBthreeB">
+									￥150
+								</div>
+							</a>
+						</div>
+						<div class="VideoGame_contentBfour">
+							<a href="">
+									<img src="img/VideoGame/yudou.jpg" alt="">
+									<div class="VideoGame_contentBfourM">
+										志高ZD-168手持挂烫机家用蒸汽电熨斗十档调温立式熨烫机烫衣服
+									</div>
+									<div class="VideoGame_contentBfourB">
+										￥139
+									</div>
+								</a>
+							</div>
+							<div class="VideoGame_contentBfive">
+								<a href="">
+									<img src="img/VideoGame/erji.jpg" alt="">
+									<div class="VideoGame_contentBfiveM">
+										Edifier/漫步者 H691音乐立体声折叠式手机电脑头戴式重低音耳机
+									</div>
+									<div class="VideoGame_contentBfiveB">
+										￥489
+									</div>
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+			</div>
+	</div>
+	<div class="FamousShopBox">
+		<div class="FamousShop">
+			<img src="img\FamousShop\FamousShop.jpg" alt="">
+		</div>
+	</div>
+	<div class="lifeBox">
+		<div id="maolife" style="position: relative;top: -35px;"></div>
+		<div class="life">
+			<div class="life_nav">
+				<span>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+					居家生活
+				</span>
+					 GROCERY & HEALTH
+				
+				<span>
+					<a href="">零食</a>
+					<a href="">牛奶</a>
+					<a href="">居家饰品</a>
+					<a href="">保温杯</a>
+					<a href="">保健品</a>
+					<a href="">常用药</a>
+					<a href="">热门图书</a>
+					<a href="">洗发水</a>
+					<a href="">卫生巾</a>
+					<a href="">家庭清洁</a>
+					<a href="">狗粮</a>
+				</span>
+			</div>
+			<div class="life_content">
+				<div class="life_contentL">
+					<a href=""><img src="img/life/l1.jpg" alt=""></a>
+					<img src="img/shopping/shopping_gengduo.png" alt="">
+
+					<div class="life_contentLT">
+						<div class="life_contentLT_left">
+							<span>天猫<br/>超市</span>
+						</div>
+						<div class="life_contentLT_right">
+							<span>粮油囤货日</span><br/>
+							<span>领卷减十元</span>
+						</div>
+					</div>	
+				</div>
+
+
+					<div class="life_contentR">
+					<div class="life_contentT">
+						<div class="life_contentTtwo">
+						<a href="">
+							<img src="img/life/l2.jpg" alt="">
+							<div class="life_contentTtwoM">
+								20卷包邮 加厚新料点断式厨房垃圾袋 环保清洁袋方便袋30只/卷
+							</div>
+							<div class="life_contentTtwoB">
+								￥1.98
+							</div>
+						</a>
+						</div>
+						<div class="life_contentTthree">
+							<a href="">
+								<img src="img/life/l3.png" alt="">
+								<div class="life_contentTthreeM">
+									口水娃多味花生500g 牛肉香辣味裹衣花生米办公室休闲零食品小吃
+								</div>
+								<div class="life_contentTthreeB">
+									￥13.8
+								</div>
+							</a>
+						</div>
+						<div class="life_contentTfour">
+							<a href="">
+								<img src="img/life/l4.png" alt="">
+								<div class="life_contentTfourM">
+									回头客华夫饼早餐食品西式糕点心办公室甜点休闲网红零食散装批发
+								</div>
+								<div class="life_contentTfourB">
+									￥21.8
+								</div>
+							</a>
+						</div>
+						<div class="life_contentTfive">
+							<a href="">
+								<img src="img/life/l5.jpg" alt="">
+								<div class="life_contentTfiveM">
+									瑞竹净水竹炭片 优质好碳片 6片装备长炭煮水泡茶多用途
+								</div>
+								<div class="life_contentTfiveB">
+									￥2.4
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="life_contentB">
+						<div class="life_contentBtwo">
+						<a href="">
+							<img src="img/life/l6.png" alt="">
+							<div class="life_contentBtwoM">
+								儿童秋装男童套装2018新款帅气潮衣帅气中童卫衣套装洋气男童街舞
+							</div>
+							<div class="life_contentBtwoB">
+								￥89
+							</div>
+						</a>
+						</div>
+						<div class="life_contentBthree">
+							<a href="">
+								<img src="img/life/l7.jpg" alt="">
+								<div class="life_contentBthreeM">
+									迪士尼儿童汤勺宝宝不锈钢餐具小孩子卡通防烫汤匙叉子勺子
+								</div>
+								<div class="life_contentBthreeB">
+									￥8.5
+								</div>
+							</a>
+						</div>
+						<div class="life_contentBfour">
+							<a href="">
+									<img src="img/life/l8.jpg" alt="">
+									<div class="life_contentBfourM">
+										得力教学用投影笔 电子教鞭笔售楼处沙盘笔置业顾问
+									</div>
+									<div class="life_contentBfourB">
+										￥15.6
+									</div>
+								</a>
+							</div>
+							<div class="life_contentBfive">
+								<a href="">
+									<img src="img/life/l9.jpg" alt="">
+									<div class="life_contentBfiveM">
+										雅客天天棒 40支棒棒糖袋装420g 特浓牛奶味糖果零食创意散装批发
+									</div>
+									<div class="life_contentBfiveB">
+										￥14.8
+									</div>
+								</a>
+							</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loveBox">
+		<div id="maolove" style="position: relative;top: -35px;"></div>
+		<div class="love">
+			<div class="love_nav">
+				<span>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+					打造爱巢
+				</span>
+					 HOME
+				
+				<span>
+					<a href="">家具</a>
+					<a href="">大家电</a>
+					<a href="">四件套</a>
+					<a href="">健康电器</a>
+					<a href="">厨房电器</a>
+					<a href="">吸顶灯</a>
+					<a href="">平板电视</a>
+					<a href="">装修设计</a>
+					<a href="">跑步机</a>
+				</span>
+			</div>
+			<div class="love_content">
+				<div class="love_contentL">
+					<a href=""><img src="img/love/v1.png" alt=""></a>
+					<img src="img/shopping/shopping_gengduo.png" alt="">
+
+					<div class="love_contentLT">
+						<div class="love_contentLT_left">
+							<span>天猫<br/>超市</span>
+						</div>
+						<div class="love_contentLT_right">
+							<span>粮油囤货日</span><br/>
+							<span>领卷减十元</span>
+						</div>
+					</div>	
+				</div>
+
+
+				<div class="love_contentR">
+					<div class="love_contentT">
+						<div class="love_contentTtwo">
+						<a href="">
+							<img src="img/love/v2.jpg" alt="">
+							<div class="love_contentTtwoM">
+								小熊煎蛋器JDQ-C3011 电煎锅迷你自动断电煮蒸蛋羹宿舍煎蛋机
+							</div>
+							<div class="love_contentTtwoB">
+								￥78
+							</div>
+						</a>
+						</div>
+						<div class="love_contentTthree">
+							<a href="">
+								<img src="img/love/v3.jpg" alt="">
+								<div class="love_contentTthreeM">
+								Royalstar/荣事达 RKF-15G电热水壶烧水壶家用304不锈钢自动断电
+								</div>
+								<div class="love_contentTthreeB">
+									￥109
+								</div>
+							</a>
+						</div>
+						<div class="love_contentTfour">
+							<a href="">
+								<img src="img/love/v4.jpg" alt="">
+								<div class="love_contentTfourM">
+									Midea/美的 DE12X31 全自动多功能智能不锈钢豆浆机家用豆花
+								</div>
+								<div class="love_contentTfourB">
+									￥299
+								</div>
+							</a>
+						</div>
+						<div class="love_contentTfive">
+							<a href="">
+								<img src="img/love/v5.png" alt="">
+								<div class="love_contentTfiveM">
+									6108养生壶壶身
+								</div>
+								<div class="love_contentTfiveB">
+									￥100
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="love_contentB">
+						<div class="love_contentBtwo">
+						<a href="">
+							<img src="img/love/v6.jpg" alt="">
+							<div class="love_contentBtwoM">
+								布衣柜钢管加粗加固双人布艺简易衣柜钢架牛津布收纳衣橱经济型y
+							</div>
+							<div class="love_contentBtwoB">
+								￥89
+							</div>
+						</a>
+						</div>
+						<div class="love_contentBthree">
+							<a href="">
+								<img src="img/love/v7.png" alt="">
+								<div class="love_contentBthreeM">
+									利仁200F多功能电热锅火锅分体304不锈钢电迷你电煮锅学生锅
+								</div>
+								<div class="love_contentBthreeB">
+									￥89
+								</div>
+							</a>
+						</div>
+						<div class="love_contentBfour">
+							<a href="">
+									<img src="img/love/v8.jpg" alt="">
+									<div class="love_contentBfourM">
+										DRUFI+ 前置过滤器扳手
+									</div>
+									<div class="love_contentBfourB">
+										￥188
+									</div>
+								</a>
+							</div>
+							<div class="love_contentBfive">
+								<a href="">
+									<img src="img/love/v9.png" alt="">
+									<div class="love_contentBfiveM">
+										奥克斯绞肉机家用电动不锈钢搅拌绞菜蒜蓉蒜泥器搅碎肉馅打肉机
+									</div>
+									<div class="love_contentBfiveB">
+										￥119
+									</div>
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+			</div>
+	</div>
+	<div class="TideRideBox">
+		<div class="TideRide">
+			<img src="img\TideRide\TideRide.jpg" alt="">
+		</div>
+	</div>
+	<div class="outdoorsBox">
+		<div id="maooutdoors" style="position: relative;top: -35px;"></div>
+		<div class="outdoors">
+			<div class="outdoors_nav">
+				<span>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+					户外出行
+				</span>
+					 OUTDOORS & AUTOMOTIVE
+				
+				<span>
+					<a href="">车秒贷</a>
+					<a href="">皮肤衣</a>
+					<a href="">运动鞋</a>
+					<a href="">4s保养</a>
+					<a href="">行车记录仪</a>
+					<a href="">轮胎</a>
+				</span>
+			</div>
+			<div class="outdoors_content">
+				<div class="outdoors_contentL">
+					<a href=""><img src="img/outdoors/o1.jpg" alt=""></a>
+					<img src="img/shopping/shopping_gengduo.png" alt="">
+
+					<div class="outdoors_contentLT">
+						<div class="outdoors_contentLT_left">
+							<span>天猫<br/>超市</span>
+						</div>
+						<div class="outdoors_contentLT_right">
+							<span>粮油囤货日</span><br/>
+							<span>领卷减十元</span>
+						</div>
+					</div>	
+				</div>
+
+
+					<div class="outdoors_contentR">
+					<div class="outdoors_contentT">
+						<div class="outdoors_contentTtwo">
+						<a href="">
+							<img src="img/outdoors/o2.jpg" alt="">
+							<div class="outdoors_contentTtwoM">
+								春夏新款户外运动短裤速干五分裤男登山休闲短裤跑步透气速干裤男
+							</div>
+							<div class="outdoors_contentTtwoB">
+								￥39
+							</div>
+						</a>
+						</div>
+						<div class="outdoors_contentTthree">
+							<a href="">
+								<img src="img/outdoors/o3.jpg" alt="">
+								<div class="outdoors_contentTthreeM">
+									探路者春夏户外男士短袖速干T恤 清爽透气
+								</div>
+								<div class="outdoors_contentTthreeB">
+									￥45
+								</div>
+							</a>
+						</div>
+						<div class="outdoors_contentTfour">
+							<a href="">
+								<img src="img/outdoors/o4.jpg" alt="">
+								<div class="outdoors_contentTfourM">
+									耐克nike挎包拎包斜挎包单肩包背包拎背旅行休闲包男手提包BA5471
+								</div>
+								<div class="outdoors_contentTfourB">
+									￥229
+								</div>
+							</a>
+						</div>
+						<div class="outdoors_contentTfive">
+							<a href="">
+								<img src="img/outdoors/o5.jpg" alt="">
+								<div class="outdoors_contentTfiveM">
+									博冠天文望远镜PL40mm目镜中低倍长焦距 高清成像非红外夜视
+								</div>
+								<div class="outdoors_contentTfiveB">
+									￥120
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="outdoors_contentB">
+						<div class="outdoors_contentBtwo">
+						<a href="">
+							<img src="img/outdoors/o6.jpg" alt="">
+							<div class="outdoors_contentBtwoM">
+								花花公子男鞋 运动户外休闲球鞋晨跑系带翘头板鞋 防水防滑皮
+							</div>
+							<div class="outdoors_contentBtwoB">
+								￥129
+							</div>
+						</a>
+						</div>
+						<div class="outdoors_contentBthree">
+							<a href="">
+								<img src="img/outdoors/o7.jpg" alt="">
+								<div class="outdoors_contentBthreeM">
+									骆驼童装男童三合一冲锋衣冬季加绒加厚保暖儿童防风防水登山外套
+								</div>
+								<div class="outdoors_contentBthreeB">
+									￥479
+								</div>
+							</a>
+						</div>
+						<div class="outdoors_contentBfour">
+							<a href="">
+									<img src="img/outdoors/o8.jpg" alt="">
+									<div class="outdoors_contentBfourM">
+										阿迪达斯adidas男鞋女鞋夏季新款运动拖鞋舒适耐磨拖凉鞋-G15890
+									</div>
+									<div class="outdoors_contentBfourB">
+										￥149
+									</div>
+								</a>
+							</div>
+							<div class="outdoors_contentBfive">
+								<a href="">
+									<img src="img/outdoors/o9.jpg" alt="">
+									<div class="outdoors_contentBfiveM">
+										迪佳2014年新品 户外中档防晒服钓鱼服 薄款 白色
+									</div>
+									<div class="outdoors_contentBfiveB">
+										￥108
+									</div>
+								</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="serviceBox">
+		<div class="service">
+			<div class="serviceT">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+			<div class="serviceB">
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="">免费注册</a>
+					</dd>
+					<dd>
+						<a href="">开通支付宝</a>
+					</dd>
+					<dd>
+						<a href="">支付宝充值</a>
+					</dd>
+					
+				</dl>
+				<dl>
+					<dt>天猫保障</dt>
+					<dd>
+						<a href="">发票保障</a>
+					</dd>
+					<dd>
+						<a href="">售后规则</a>
+					</dd>
+					<dd>
+						<a href="">缺货赔付</a>
+					</dd>
+							
+				</dl>
+				<dl>
+					<dt>支付方式</dt>
+					<dd>
+						<a href="">快捷支付</a>
+					</dd>
+					<dd>
+						<a href="">信用卡</a>
+					</dd>
+					<dd>
+						<a href="">余额宝</a>
+					</dd>
+					<dd>
+						<a href="">蚂蚁花呗</a>
+					</dd>
+					<dd>
+						<a href="">货到付款</a>
+					</dd>		
+				</dl>
+				<dl>
+					<dt>商家服务</dt>
+					<dd><a href="">天猫规则</a></dd>
+					<dd><a href="">商家入驻</a></dd>
+					<dd><a href="">商家中心</a></dd>
+					<dd><a href="">天猫智库</a></dd>
+					<dd><a href="">物流服务</a></dd>
+					<dd><a href="">喵言喵语</a></dd>
+					<dd><a href="">运营服务</a></dd>
+	
+				</dl>
+				<dl>
+					<dt>手机天猫</dt>
+					<dd>
+						<a href="">
+							<img src="img/service/x01.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div class="footBox">
+		<div class="foot">
+			<p>
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉政举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<p>
+				<a href="">阿里巴巴集团</a>|
+				<a href="">淘宝网</a>|
+				<a href="">天猫</a>|
+				<a href="">聚划算</a>|
+				<a href="">全球通卖通</a>|
+				<a href="">阿里巴巴国际交易市场</a>|
+				<a href="">1688</a>|
+				<a href="">阿里妈妈</a>|
+				<a href="">飞猪</a>|
+				<a href="">阿里云计算</a>|
+				<a href="">AliOS</a>｜
+				<a href="">阿里通信</a>｜
+				<a href="">万网</a>｜
+				<a href="">高德</a>｜
+				<a href="">UC</a>｜
+				<a href="">友盟</a>｜
+				<a href="">虾米</a>｜
+				<a href="">钉钉</a>｜
+				<a href="">支付宝</a>
+			</p>
+			<div class="footB">
+				增值电信业务经营许可证：
+				<a style="margin-right: 65px;" href="">浙B2-20110446</a>
+				<span style="margin-right: 65px;">
+					市场名称登记证：工商网市字3301004119号
+				</span>
+				<span>
+					出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+				</span>
+				<br/>
+				<span style="margin-right: 65px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+				互联网药品信息服务资质证书编号：<a style="margin-right: 65px;" href="">浙-（经营性）-2017-0005</a>
+				<a href=""><img style="position: relative; top: 4px;" src="img/service/zhegongwang.png" alt="">浙公网安备 33010002000120号</a><br/>
+				<span style="margin-right: 65px;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+				<span>互联网药品交易服务资格证书：国A20150001</span><br/>
+				<span style="margin-right: 65px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+				<a href="">12318举报</a><br/>
+				<span style="color: #686868;">© 2003-2018 TMALL.COM 版权所有</span><br/>
+				<a style="padding-top: 10px; margin-right: 11px;" href=""><img style="padding-top: 10px;" src="img/service/wnagluogongshang.jpg" alt=""></a>
+				<a style="padding-top: 10px;" href=""><img style="padding-top: 10px;" src="img/service/xuke.jpg" alt=""></a>
+			</div>   
+		</div>
+	</div>
+	<div class="bottom">		
+	</div>
+	<div class="floatNav">
+		<div class="floatNavT">
+			导航
+		</div>
+		<div class="floatNavB">
+			<a href="#maoShopping"><span>天猫超市</span></a>
+			<a href="#maotmallHK"><span>天猫国际</span></a>
+			<a href="#maoBeautifulLife"><span>美丽人生</span></a>
+			<a href="#maoVideoGame"><span>潮电酷玩</span></a>
+			<a href="#maolife"><span>居家生活</span></a>
+			<a href="#maolove"><span>打造爱巢</span></a>
+			<a href="#maooutdoors"><span>户外出行</span></a>
+			<a href=""><span>猜你喜欢</span></a>
+			<a href="#maodingbu"><span><i class="iconfont icon-jiantou"></i>顶部</a></span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			let th=$(window).scrollTop();
+			if (th>=576) {
+				 // $(".floatNav").css({
+				 // 		"bottom": "50px"
+				 // 	});
+				  $(".floatNav").animate({ 
+				    "width": "36px",
+				    "height": "369px", 
+				   "left": "2px" 
+				  }, 200);
+
+			}
+			if (th<576){
+				$(".floatNav").animate({ 
+				   "width": "0px",
+				   "height": "0px",
+				   "left": "-50px" 
+				  }, 200 );
+			}
+		})
+	</script>
+	
+
+	
+	<div class="sidebar">
+		<span><a href=""><i class="iconfont icon-tianmaoxingxiang1"></i></a></span>
+		<span><a href=""><i class="iconfont icon-gouwuche"></i>购物车</a></span>
+		<span><a href=""><i class="iconfont icon-qian"></i></a></span>
+		<span><a href=""><i class="iconfont icon-shoucang"></i></a></span>
+		<span><a href=""><i class="iconfont icon-lishijilu"></i></a></span>
+		<span><a href=""><i class="iconfont icon-chongzhi0101"></i></a></span>
+		<span><a href=""><i class="iconfont icon-3fankuiyijianbai"></i></a></span>
+		<span><a href=""><i class="iconfont icon-erweima"></i></a></span>
+		<span><a href="#maodingbu"><i class="iconfont icon-fanhuidingbu1"></i></a></span>
+	</div>
+
+
+	
 </body>
 </html>
