@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/Land.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 	<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
 </head>
@@ -28,25 +28,87 @@
 			</div>
 			<div class="landForm">
 				<span>用户注册</span>
-				<form>
+				<form action="register.php" method="post">
 					<div class="MemberName">
-						<label><i class="iconfont icon-dengluyonghuming"></i></label>
-						<input style="width:256px;height: 40px;" type="text" name="">
+						用户名：
+						<input id="userId" style="width:150px;height: 24px;" type="text" name="userId"><span style="width:150px;height: 24px;"  id="userIdSpan"></span><br/>
 					</div>
 					<div class="MemberPassword">
-						<label><i class="iconfont icon-mima"></i></label>
-						<input style="width:256px;height: 40px;" type="text" name="">
+						密码：
+						<input id="userPass" style="width:150px;height: 24px;" type="password" name="userPass">
 					</div>
-					<input class="MemberPasswordL" type="submit" value="登录" name="">
+					<div class="
+					MemberPasswordRest">
+						重复密码:
+						<input style="width:150px;height: 24px;" type="password" name="">
+					</div>
+					<!-- <div class="
+					Code">
+						验证码：						<input style="width:80px;height: 24px;" type="text" 
+						name="">
+
+						<input style="height: 24px;width: 24px;background-color: ; float: right;" type="button" name="">
+						<span></span> -->
+					</div>
+					<input id="btnReg" class="MemberPasswordL" type="submit" value="注册" name="">
+					<div id="messageBox" style="color: red;display: none;" ></div>
 				</form>
 			</div>
-			<div class="registerLand">
-				<span><a href="">忘记密码</a></span>
-				<span style="margin: 0 5px;"><a href="">忘记会员名</a></span>
-				<span><a href="">免费注册</a></span>
-			</div>
 		</div>
-	</div>
+	<script type="text/javascript">
+	window.onload=function(){
+		$("#userId").onblur =function(){
+			let xhr= new XMLHttpRequest();
+			xhr.open("post","register.php?userId="+this.value,true);
+			xhr.onreadystatechange=function(){
+				if (xhr.readyState==4&&xhr.status==200) {
+					if (xhr.responseText=="1") {
+						$("#userIdSpan").innerHTML="已被使用";
+					}else{
+						$("#userIdSpan").innerHTML="可以使用";
+					}
+				}
+			}
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xhr.send(`userId=${$("#userId").value}&userPass=${$("#userPass").value}`);
+		}
+
+	$("#btnReg").onclick = function(){
+		//1、创建对象
+		let xhr = new XMLHttpRequest();
+		//2、设置请求参数
+		xhr.open("post","register02.php",true);
+
+		//3、设置回调函数
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText=="1"){
+					location.href="index.html";
+				}else{
+					$("#messageBox").innerHTML="注册失败！";
+					$("#messageBox").style.display = "block";
+				}
+
+			}
+		}
+
+		//如果是post方式，必须要设置请求头
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");//设置请求头
+
+		//4、发送
+		xhr.send(`userId=${$("#userId").value}&userPass=${$("#userPass").value}`);
+		}
+	}
+	function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}
+	</script>	
 	<div class="footBox">
 		<div class="foot">
 			<p>

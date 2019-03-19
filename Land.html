@@ -28,16 +28,17 @@
 			</div>
 			<div class="landForm">
 				<span>密码登录</span>
-				<form>
+				<form action="Land.php" method="post">
 					<div class="MemberName">
 						<label><i class="iconfont icon-dengluyonghuming"></i></label>
-						<input style="width:256px;height: 40px;" placeholder="会员名\邮箱\手机号"  type="text" name="">
+						<input style="width:256px;height: 40px;" placeholder="会员名\邮箱\手机号"  type="text" name="userId">
 					</div>
 					<div class="MemberPassword">
 						<label><i class="iconfont icon-mima"></i></label>
-						<input style="width:256px;height: 40px;" type="text" name="">
+						<input style="width:256px;height: 40px;" type="password" name="userpass">
 					</div>
-					<input class="MemberPasswordL" type="submit" value="登录" name="">
+					<input id="loginBtn" class="MemberPasswordL" type="submit" value="登录" name="">
+					<div id="errorMessage" style="display: none;color:red"></div>
 				</form>
 			</div>
 			<div class="registerLand">
@@ -47,6 +48,28 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		window.onload=function(){
+			$("#loginBtn").onclick=function(){
+				let xhr=new XMLHttpRequest();
+				xhr.open("post","Land.php",true);
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200){
+						if(xhr.responseText=="登陆成功！"){
+							addCookie("userId",$("#userId").value,7);
+							location.href="index.html";
+						}else{
+							$("#errorMessage").innerHTML="登录失败";
+							$("#errorMessage").style.display="block";
+						}
+					}
+				}
+				xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				let str=`userId=${$("#userId").value}&userpass=${$("#userpass").value}`;
+				xhr.send(str);
+			}
+		}
+	</script>
 	<div class="footBox">
 		<div class="foot">
 			<p>

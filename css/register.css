@@ -126,57 +126,26 @@ img{
 }
 
 .MemberName{
-	width: 300px;
-	height: 42px;
-	margin-left: 25px;
-	margin-top: 25px;
-}
-.MemberName label{
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	font-size: 22px;
-	color: #606060;
-	line-height: 40px;
-	text-align: center;
-	background-color: #dddddd;
-	border: 1px solid #cbcbcb;
-	border-right: none;
-	float: left;
-
-}
-.MemberName label i{
-	font-size: 24px;
-}
-.MemberName input{
-	width:256px;
-	height: 40px;
-	font-size: 14px;
-	line-height: 40px;
-	border: 1px solid #cbcbcb;
-	border-left: none;
-	margin-top: -5px;
-}
-.MemberNameL{
-	background-color: #ff0036;
-	width: 300px;
-	height: 42px;
-	font-size:16px;
-	border: none;
-	border-radius: 3px;
+	
 	margin-left: 25px;
 	margin-top: 20px;
-	color:#ffffff;
 }
+
+.MemberName input{
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #cbcbcb;
+	margin-top: -5px;
+}
+
 
 
 .MemberPassword{
-	width: 300px;
-	height: 42px;
 	margin-left: 25px;
-	margin-top: 25px;
+	margin-top: 20px;
+	float: left;
 }
-.MemberPassword label{
+/*.MemberPassword label{
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -186,21 +155,40 @@ img{
 	text-align: center;
 	background-color: #dddddd;
 	border: 1px solid #cbcbcb;
-	border-right: none;
+	float: left;
+}*/
+
+.MemberPassword input{
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #cbcbcb;
+}
+
+
+.MemberPasswordRest{
+	margin-left: 25px;
+	margin-top: 20px;
 	float: left;
 }
-.MemberPassword label i{
-	font-size: 24px;
-}
-.MemberPassword input{
-	width:256px;
-	height: 40px;
+
+.MemberPasswordRest input{
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 24px;
 	border: 1px solid #cbcbcb;
-	border-left: none;
-	
 }
+
+/*.Code{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+.Code input{
+	width:256px;
+	height: 24px;
+	font-size: 14px;
+	line-height:24px;
+	border: 1px solid #cbcbcb;
+}*/
+
 .MemberPasswordL{
 	background-color: #ff0036;
 	width: 300px;
@@ -209,22 +197,9 @@ img{
 	border: none;
 	border-radius: 3px;
 	margin-left: 25px;
-	margin-top: 20px;
 	color:#ffffff;
 	font-weight: bold;
 }
-.registerLand{
-	margin-top: -55px;
-    margin-left: 137px;
-}
-.registerLand a{
-	font-size:12px;
-	color:#6c6c6c;
-}
-.registerLand a:hover{
-	color: #ff0036; 
-}
-
 /*foot*/
 
 .footBox{
