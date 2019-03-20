@@ -20,4 +20,8 @@ gulp.task("watchall",async ()=>{
 		// .{jpg,png}
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\h5_1811\\20190312"))
 	})
+	gulp.watch("*.php",async()=>{
+		gulp.src("*.php")
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\h5_1811\\20190312"));
+	})
 });

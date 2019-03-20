@@ -261,17 +261,34 @@ img{
 .banner_img ul{
 	position: absolute;
 	bottom: 26px;
-	z-index: 3;
 	margin-left: 536px;
 }
-.banner_img ul a{
+.banner_img li{
 	float: left;
 	width: 25px;
 	height: 5px;
 	background-color: #a3a3a3;
 	margin-right: 8px;
+	cursor: pointer;
 }
-
+#img01{
+	opacity: 1;
+}
+#img02{
+	opacity: 0;
+}
+#img03{
+	opacity: 0;
+}
+#img04{
+	opacity: 0;
+}
+#img05{
+	opacity: 0;
+}
+#img06{
+	opacity: 0;
+}
 
 /*brand 品牌*/
 
