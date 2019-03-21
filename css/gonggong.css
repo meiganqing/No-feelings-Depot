@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑";
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+
+}
+img{
+	border:none;
+}
+/*header*/
+.header{
+	width: 100%;
+	height: 32px;
+	background-color:#f2f2f2 ;
+	border-bottom: 1px solid #e5e5e5;
+}
+.headerIndex{
+	width: 1230px;
+	height: 32px;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999999;
+	line-height: 32px;
+}
+.headerIndex a{
+	color: #999999;
+}
+.headerIndex a:hover{
+	color: #ff0036;
+	text-decoration:underline;
+}
+.headerLeft{
+	width: 243px;
+	height: 32px;
+	float: left;
+
+}
+.headerLeft li{
+	float: left;
+	margin-right: 19px;	
+}
+.headRight{
+	width: 519px;
+	height: 32px;
+	float: right;
+	/*vertical-align: middle;*/
+}
+.headRight li{
+	float: left;
+	margin-right: 15px;
+	text-align: center;
+	padding: 0 2px;
+}
+
+.headRight li:nth-child(8){
+	margin-right: 7px;
+}
+.headRight span{
+	width: 0px;
+	height:0px;
+	border:3px solid transparent;
+	border-top-color: #bbbbbb;
+	margin-top: 15px;
+	float: right;
+	transition: all 0.3s;
+}
+.headRight li:nth-child(8):hover span,li:nth-child(1):hover span,li:nth-child(3):hover span,li:nth-child(7):hover span{
+	transform: rotate(180deg) translateY(3px);
+	
+}
+.headRight i{
+	margin-right: 3px;
+	float: left;
+	color: #ff0036;
+}
+.headRight li:nth-child(2) i{
+	font-size: 12px;
+	margin-top: 1px;	
+}
+.headRight li:nth-child(5) i{
+	font-size: 14px;
+	margin-top: 1px;
+}
+.headRight li:nth-child(8) i{
+	font-size: 14px;
+	margin-top: 1px;
+}
+
+
+
+/*service*/
+.serviceBox{
+	width: 100%;
+	height: 363px;
+	border-top: 1px solid #d1d7dc ;
+	border-bottom: 2px solid #ff0036;
+	padding-top: 63px;
+}
+.service{
+	width: 1190px;
+	height: 363px;
+	margin: 0 auto;
+	
+}
+.serviceT{
+	width: 1190px;
+	height: 150px;
+	border-bottom: 1px solid #ededed;
+	/*background-color: red;*/
+	background: url(../img/service/qitiantuihuo.jpg) no-repeat;
+	background-size: 1190px 100px;
+	background-position: 0 25px;
+}
+.serviceT a{
+	display: inline-block;
+	width: 297px;
+	height:100px;
+	/*background-color: green;*/
+	float: left;
+	margin-top: 25px;
+}
+
+
+.serviceB{
+	width: 1190px;
+	padding-top: 22px;
+	height: 190px;
+	background: url(../img/service/maotou.png) no-repeat;
+	background-size: 68px 25px;
+	background-position: 52px 187px;
+}
+.serviceB dl { 
+	width: 186px;
+	padding-left: 52px;
+	float: left;
+}
+
+.serviceB dl dt{
+	height:30px; 
+	line-height:30px;
+	text-align: left;
+	font-size:16px; 
+	color:#646464;
+	font-weight: bold;
+}
+
+.serviceB dl a{
+	width: 100px;
+	height:20px; 
+	line-height:20px;
+	text-align: left;
+	font-size:12px; 
+	color:#8b8b8b;
+	
+}
+
+
+/*foot*/
+
+.footBox{
+	width: 100%;
+	height: 220px;
+	background-color: #000000;
+}
+.foot{
+	width: 1190px;
+	height: 220px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+.foot p{
+	height: 35px;
+	color: #ffffff;
+}
+.foot p a{
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 35px;
+
+}
+
+.footB{
+	width: 1190px;
+	height: 150px;
+	font-size:12px;
+	color: #a4a4a4;
+	line-height: 20px;
+
+}
+.footB a{
+	font-size:12px;
+	color: #a4a4a4;
+
+}
+

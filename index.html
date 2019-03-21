@@ -131,92 +131,92 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-	var arr=["img_banner/banner1.jpg","img_banner/banner2.jpg","img_banner/banner3.jpg","img_banner/banner1.jpg","img_banner/banner2.jpg","img_banner/banner3.jpg"];
-	var ord = 0;//代表当前图片的序号，从0开始。
-	var myTimer = null;
- 
-	function  initUI() {
-	    $("#doudouBox li:first").css({"backgroundColor":"red"});
-	}
- 
-	function  initEvent() {
-    $(".banner_img").mouseenter(function () {
-        stopPlay();
-    });
- 
-    $(".banner_img").mouseleave(function () {
-        autoPlay();
-    });
- 
-    $("#doudouBox li").click(function () {
-        goImg($("#doudouBox li").index(this));
-    });
- 
-    // $("#leftArrow").click(function () {
-    //     let transord =ord-1;
-    //     transord = transord<0?arr.length-1:transord;
-    //     goImg(transord);
-    // });
- 
-    // $("#rightArrow").click(function () {
-    //     let transord =ord+1;
-    //     transord = transord>arr.length-1?0:transord;
-    //     goImg(transord);
-    // });
-	}
- 	function autoPlay() {
-    myTimer = setInterval(function () {
-        //一、改变数据
-        // 1、记录当前序号（淡出的图片序号）
-        let outOrd = ord;
-        //2、改变要显示的图片的序号（淡出图片序号加一）
-        ord++;
-        if(ord>arr.length-1){
-            ord=0;
-        }
-        //二、改变外观
-        let $img = $(".banner_img a");
-        //1、淡入淡出效果
-        //让一张(outOrd)淡出 当前消失
-        $img.eq(outOrd).animate({"opacity":0},1000);
-        $img.eq(ord).animate({"opacity":1},1000);
-        $("#doudouBox li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
-    },2000);
-	}
-    function stopPlay() {
-    window.clearInterval(myTimer);
-	}
- 
-	//3、跳转到指定的图片
-	function  goImg(transOrd) {
-    //一、改变数据
-    // 1、记录当前序号（淡出的图片序号）
-    let outOrd = ord;
-    //2、改变要显示的图片的序号（传入的图片序号）
-    ord=transOrd;
-    if(ord>arr.length-1){
-        ord=0;
-    }
-    //二、改变外观
-    let $img = $(".banner_img a img");
-    //1、淡入淡出效果
-    //让一张(outOrd)淡出 当前消失
-    $img.eq(outOrd).animate({"opacity":0},2000);
-    //让一张(or
-    $img.eq(ord).animate({"opacity":1},2000);
-    //2、改变豆豆的颜色；
-    $("#doudouBox li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
-	}
- 
-	$(function () {
-	    //1、初始化界面
-	    initUI();
-	    //2、绑定事件
-	    initEvent();
-	    //3、自动播放
-	    autoPlay();
-	});
-</script>
+		var arr=["img_banner/banner1.jpg","img_banner/banner2.jpg","img_banner/banner3.jpg","img_banner/banner1.jpg","img_banner/banner2.jpg","img_banner/banner3.jpg"];
+		var ord = 0;//代表当前图片的序号，从0开始。
+		var myTimer = null;
+	 
+		function  initUI() {
+		    $("#doudouBox li:first").css({"backgroundColor":"red"});
+		}
+	 
+		function  initEvent() {
+	    $(".banner_img").mouseenter(function () {
+	        stopPlay();
+	    });
+	 
+	    $(".banner_img").mouseleave(function () {
+	        autoPlay();
+	    });
+	 
+	    $("#doudouBox li").click(function () {
+	        goImg($("#doudouBox li").index(this));
+	    });
+	 
+	    // $("#leftArrow").click(function () {
+	    //     let transord =ord-1;
+	    //     transord = transord<0?arr.length-1:transord;
+	    //     goImg(transord);
+	    // });
+	 
+	    // $("#rightArrow").click(function () {
+	    //     let transord =ord+1;
+	    //     transord = transord>arr.length-1?0:transord;
+	    //     goImg(transord);
+	    // });
+		}
+	 	function autoPlay() {
+	    myTimer = setInterval(function () {
+	        //一、改变数据
+	        // 1、记录当前序号（淡出的图片序号）
+	        let outOrd = ord;
+	        //2、改变要显示的图片的序号（淡出图片序号加一）
+	        ord++;
+	        if(ord>arr.length-1){
+	            ord=0;
+	        }
+	        //二、改变外观
+	        let $img = $(".banner_img a");
+	        //1、淡入淡出效果
+	        //让一张(outOrd)淡出 当前消失
+	        $img.eq(outOrd).animate({"opacity":0},1000);
+	        $img.eq(ord).animate({"opacity":1},1000);
+	        $("#doudouBox li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
+	    },2000);
+		}
+	    function stopPlay() {
+	    window.clearInterval(myTimer);
+		}
+	 
+		//3、跳转到指定的图片
+		function  goImg(transOrd) {
+	    //一、改变数据
+	    // 1、记录当前序号（淡出的图片序号）
+	    let outOrd = ord;
+	    //2、改变要显示的图片的序号（传入的图片序号）
+	    ord=transOrd;
+	    if(ord>arr.length-1){
+	        ord=0;
+	    }
+	    //二、改变外观
+	    let $img = $(".banner_img a img");
+	    //1、淡入淡出效果
+	    //让一张(outOrd)淡出 当前消失
+	    $img.eq(outOrd).animate({"opacity":0},2000);
+	    //让一张(or
+	    $img.eq(ord).animate({"opacity":1},2000);
+	    //2、改变豆豆的颜色；
+	    $("#doudouBox li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
+		}
+	 
+		$(function () {
+		    //1、初始化界面
+		    initUI();
+		    //2、绑定事件
+		    initEvent();
+		    //3、自动播放
+		    autoPlay();
+		});
+	</script>
 	<div class="brandBox">
 		<div class="brand">
 			<div class="brand_a1">

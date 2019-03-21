@@ -88,19 +88,21 @@
 			<div class="CommodityDetailsL">
 				<div class="CommodityImg">
 					<span class="CommodityImgSpan">
-						<img src="img\CommodityDetails\imga1.jpg" alt="">
+						<!-- <img src="img\CommodityDetails\imga1.jpg" alt="">
 						<img src="img\CommodityDetails\imga2.jpg" alt="">
 						<img src="img\CommodityDetails\imga3.jpg" alt="">
 						<img src="img\CommodityDetails\imga4.jpg" alt="">
-						<img src="img\CommodityDetails\imga5.jpg" alt="">
+						<img src="img\CommodityDetails\imga5.jpg" alt=""> -->
 					</span>
+					<div class="CommodityImgSpanSmall"></div>
+					<div class="CommodityImgSpanBig"></div>
 					<div class="Commodityimgs">
 						<ul>
-							<li><img src="img\CommodityDetails\imgb1.jpg" alt=""></li>
+							<!-- <li><img src="img\CommodityDetails\imgb1.jpg" alt=""></li>
 							<li><img src="img\CommodityDetails\imgb2.jpg" alt=""></li>
 							<li><img src="img\CommodityDetails\imgb3.jpg" alt=""></li>
 							<li><img src="img\CommodityDetails\imgb4.jpg" alt=""></li>
-							<li><img src="img\CommodityDetails\imgb5.jpg" alt=""></li>
+							<li><img src="img\CommodityDetails\imgb5.jpg" alt=""></li> -->
 						</ul>
 					</div>
 					<div class="share">
@@ -192,10 +194,119 @@
 					</div>
 				</div>
 			</div>
-			<div class="CommodityDetailsR"></div>
+			<div class="CommodityDetailsR">
+				<div class="CommodityDetailsRT">
+					<span>大家都在买</span>
+				</div>
+				<div class="CommodityDetailsRB">
+					<ul>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right1.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right2.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right3.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right4.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right5.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right6.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right1.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right5.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+						<li>
+							<a href=""><img src="img/CommodityDetails/banner_right9.jpg" alt=""></a>
+							<p><a href="">昆仑快乐水</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="CommodityDetailsRButton">
+					<ul>
+						<li><i style="font-size: 20px;" class="iconfont icon-jiantouarrow483"></i></li>
+						<li><i class="iconfont icon-jiantou"></i></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-	
+	<script type="text/javascript">
+		$(".CommodityImgSpan").mouseover(function(){
+	    $(".CommodityImgSpanBig").css("display","block");
+	    $(".CommodityImgSpanSmall").css("display","block");
+	    });
+		$(".CommodityImgSpan").mouseout(function(){
+	    $(".CommodityImgSpanBig").css("display","none");
+	    $(".CommodityImgSpanSmall").css("display","none")
+		});
+		$(".CommodityImgSpan").mousemove(function(event){
+	    let evt =event || window.event;
+	    let left1 = evt.pageX - qq(".CommodityImgSpan")[0].offsetLeft -209;
+	    let top1 = evt.pageY -  qq(".CommodityImgSpan")[0].offsetTop - 209;
+	    if(left1<=0){
+	        left1 = 0;
+	    }else if(left1>=418 - 209){
+	        left1 =418-209;  //400 -200 ：为box宽 - shadow宽 （方便）
+	    }
+
+	    if(top1<=0){
+	        top1 = 0;
+	    }else if(top1>=418 - 209){
+	        top1=418 - 209;
+	    }
+
+
+	    qq(".CommodityImgSpanSmall")[0].style.left = left1+"px";
+	    qq(".CommodityImgSpanSmall")[0].style.top = top1+"px";
+	    qq(".CommodityImgSpanBig")[0].style.backgroundPosition = `${-1*2*left1}px ${-1*2*top1}px` +"";
+	    console.log(left1);
+	    console.log(top1);
+	    console.log(qq(".CommodityImgSpanBig")[0].style.backgroundPosition);
+
+		});
+			$(".small_glass2").mouseenter(function() {
+		    $(".small_glass2").css({"border": "1px solid black"});
+		    $(".small_glass1").css("border", "none");
+		    $(".CommodityImgSpan").css("background", "url(../img/goods/goods2.jpg ) no-repeat");
+		    $(".CommodityImgSpanBig").css({"background-image": "url(../img/goods/goods2.jpg)"});
+		});
+		$(".small_glass1").mouseenter(function(){
+		    $(".small_glass1").css("border","1px solid black");
+		    $(".small_glass2").css("border","none");
+		    $(".CommodityImgSpan").css("background","url(../img/goods/goods1.jpg) no-repeat");
+		    $(".CommodityImgSpanBig").css({"background-image": "url(../img/goods/goods1.jpg)"});
+		});
+
+		function qq(str){
+	    if(str.charAt(0)=="#"){
+	        return document.getElementById(str.substring(1));
+	    }else if(str.charAt(0)=="."){
+	        return document.getElementsByClassName(str.substring(1));
+	    }else{
+	        return document.getElementsByTagName(str);
+	    }
+		}
+	</script>
+
+
+
 
 	<div class="bannerBox">
 		<ul class="bannerBoxL">
@@ -204,8 +315,67 @@
 			<li><a href=""><img src="img\CommodityDetails\banner-left3.jpg" alt=""></a></li>
 		</ul>
 		<ul class="bannerBoxR">
-			
+			<div class="bannerBoxRT">
+				<ul style="display: block;">
+					<li ><a style="width: 88px;" href="">商品详情</a></li>
+					<li><a  style="width: 125px;" href="">累计评价 <span>13741</span></a></li>
+					<li  style="width: 87px;"><a href="">售后服务</a></li>
+				</ul>
+			</div>
+			<div class="bannerimg">
+				<a href=""><img src="img\CommodityDetails\banner1.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner2.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner3.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner4.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner5.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner6.jpg" alt=""></a>
+				<a href=""><img src="img\CommodityDetails\banner7.jpg" alt=""></a>
+				
+			</div>
+			<ul id="num">
+				<li class="on">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+			</ul>
+			<img src="img\CommodityDetails\bannerB.jpg" alt="">
+			<img src="img\CommodityDetails\bannerB2.jpg" alt="">
 		</ul>
 	</div>
+	<script type="text/javascript">
+		//滚动广告
+	    var len = $("#num > li").length;
+	    var index = 0;  //图片序号
+	    var adTimer;
+	    $("#num li").mouseover(function() {
+	        index = $("#num li").index(this);  //获取鼠标悬浮 li 的index
+	        showImg(index);
+	    }).eq(0).mouseover();
+	    //滑入停止动画，滑出开始动画.
+	    $('.bannerimg').hover(function() {
+	        clearInterval(adTimer);
+	    }, function() {
+	        adTimer = setInterval(function() {
+	            showImg(index)
+	            index++;
+	            if (index == len) {       //最后一张图片之后，转到第一张
+	                index = 0;
+	            }
+	        }, 3000);
+	    }).trigger("mouseleave");
+	    function showImg(index) {
+	        var adHeight = $(".bannerimg>a:first").height();
+	        $(".bannerimg").stop(true, false).animate({
+	            "marginTop": -adHeight * index + "px"    //改变 marginTop 属性的值达到轮播的效果
+	        }, 1000);
+	        $("#num li").removeClass("on")
+	            .eq(index).addClass("on");
+   		 }
+	</script>
+
+
 </body>
 </html>

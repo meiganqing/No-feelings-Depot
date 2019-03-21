@@ -104,7 +104,7 @@ img{
 .navBox{
 	width: 100%;
 	height: 132px;
-	border: 1px solid #2f2f2f;
+	border-bottom: 1px solid #2f2f2f;
 }
 .nav{
 	width: 1190px;
@@ -276,18 +276,46 @@ img{
 	height: 604px;
 	/*background-color: red;*/
 	display: inline-block;
-	position: absolute;
+/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	
+}
+
+.CommodityImgSpanSmall{
+	width: 209px;
+	height: 209px;
+	/*z-index: 400;*/
+	/*background: red;*/
+	margin-left:9px;
+	position: absolute; 
+	top:20px;
+	border: 1px solid #999; 
+	display: none;
+}
+.CommodityImgSpanBig{
+	width: 418px;
+	height: 418px;
+	z-index: 400;
+	/*background: red;*/
+	margin-left:440px;
+	position: absolute; 
+	top:20px;
+	border: 1px solid #999; 
+	display: none;
 }
 
 .CommodityImgSpan{
+	display: inline-block;
 	width: 418px;
 	height: 418px;
 	overflow: hidden;
 	border: 1px solid #f2f2f2;
 	margin-left:9px;
-	position: absolute; 
+	/*background-color: red;*/
+	position: relative; 
 	top:20px; 
+	background-image: url(..\img\CommodityDetails\imga1.jpg);
 }
+
+
 
 .CommodityImg span img{
 	width: 418px;
@@ -311,7 +339,7 @@ img{
 	float: right;
 	border: 1px solid black transparent;
 	margin: 0 8px;
-	z-index: 100;
+
 }
 .Commodityimgs ul{
 	margin-right: 40px;
@@ -462,14 +490,6 @@ img{
 	color:#ffffff ;
 }
 
-
-
-.CommodityDetailsR{
-	width:200px;
-	height: 604px;
-	background-color:black;
-	float: right;
-}
 .fanwei{
 	width: 510px;
 	height: 225px;
@@ -479,6 +499,90 @@ img{
 	line-height: 18px;
 	font-size: 12px;
 }
+
+
+
+
+.CommodityDetailsR{
+
+	width:200px;
+	height: 604px;
+	float: right;
+	
+}
+
+.CommodityDetailsRT{
+	
+	width:200px;
+	height: 20px;
+	text-align: center;
+}
+.CommodityDetailsRT span{
+	font-size: 12px;
+	color: #999999;
+	line-height: 18px;
+}
+
+
+.CommodityDetailsRB{
+	width:200px;
+	height: 522px;
+	overflow: hidden;
+}
+.CommodityDetailsRB ul li img{
+	width:140px;
+	height: 140px;
+}
+
+.CommodityDetailsRB ul li{
+	text-align: center;
+	width:175px;
+	height: 174px;
+	margin:0 auto;
+}
+.CommodityDetailsRB ul li p{
+	font-size: 12px;
+	color:#62574e;
+	text-align:center;
+}
+.CommodityDetailsRB ul li p a{
+	font-size: 12px;
+	color:#62574e;
+	
+}
+
+.CommodityDetailsRB ul li p:hover a{
+	
+	color:#ff0036;
+	text-decoration: underline;
+	
+}
+
+.CommodityDetailsRButton ul{
+	width:175px;
+	height: 27px;
+}
+
+.CommodityDetailsRButton ul li{
+	float: left;
+	cursor: pointer;
+	color: #afafaf;
+}
+
+.CommodityDetailsRButton ul li:first-child{
+	margin-left: 60px;
+	margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -514,4 +618,74 @@ img{
 	height: 563px;
 	/*background-color: pink;*/
 	float: left;
+}
+
+.bannerBoxRT{
+	width: 788px;
+	height: 48px;
+	border: 1px solid #dfdfdf;
+	
+}
+.bannerBoxRT ul li{
+	float: left;
+	line-height: 48px;
+	height: 48px;
+}
+.bannerBoxRT ul li a{
+	color: #333333;
+	font-size: 12px;
+}
+
+.bannerBoxRT ul li:nth-child(1){
+	width: 88px;
+	text-align: center;
+}
+.bannerBoxRT ul li:nth-child(2){
+	width: 125px;
+	text-align: center;
+}
+.bannerBoxRT ul li:nth-child(3){
+	width: 87px;
+	text-align: center;
+}
+
+
+.bannerimg{
+	clear: both;
+	width: 790px;
+	height: 305px;
+	background-color: red;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.bannerimg img,a{
+	width: 790px;
+	height: 305px;
+}
+
+#num {
+	width: 240px;
+	height:28px;
+	line-height: 28px;
+	z-index: 100;
+	position: relative;
+	top: -35px;
+	left: 533px;
+}
+#num li{
+	margin-left: 5px;
+	float: left;
+	width: 24px;
+	height:24px;
+	border-radius: 50%;
+	background-color: #716564;
+	cursor: pointer;
+	text-align: center;
+	line-height: 24px;
+}
+
+#num .on{
+    background-color: #b91919;
 }
